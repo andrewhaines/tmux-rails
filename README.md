@@ -9,3 +9,17 @@ sh ~/tmux-rails/launch.sh project_name
 ```
 
 This will open three windows: one for git (listing the local branches); one to tail the development log; and one for the console. It'll also launch Atom for the project folder.
+
+To make this easier to load, you can create a function in `.bash_profile` or `.bashrc` like this:
+
+```console
+tmuxr () {
+  eval "sh ~/tmux-rails/launch.sh $1"
+}
+```
+
+To start up this way run:
+
+```console
+tmuxr project_name
+```
