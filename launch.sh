@@ -3,7 +3,7 @@
 # Create a tmux session for a rails project
 
 # Get to the directory, open Atom, and show git branches
-dir="~/Projects/"$1
+dir="~/Projects/rails/"$1
 tmux -2 new-session -d -s $1 -n 'git' 'cd '"$dir"'; atom .; git branch; bash'
 
 # Tail the dev log in a new window
