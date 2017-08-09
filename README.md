@@ -4,15 +4,15 @@ This script launches a Rails development environment in tmux. It takes a variabl
 
 To start up run:
 
-```console
-sh ~/tmux-rails/launch.sh project_name
+```
+~/tmux-rails/launch.sh project_name
 ```
 
 This will open three windows: one for git (listing the local branches); one to tail the development log; and one for the console. It'll also launch Atom for the project folder.
 
 To make this easier to load, you can create a function in `.bash_profile` or `.bashrc` like this:
 
-```console
+```sh
 tmuxr () {
   eval "sh ~/tmux-rails/launch.sh $1"
 }
@@ -20,6 +20,6 @@ tmuxr () {
 
 To start up this way run:
 
-```console
+```
 tmuxr project_name
 ```
